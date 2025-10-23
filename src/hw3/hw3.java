@@ -20,12 +20,12 @@ public class hw3 {
 
 class triangle{
 
-    int side1;
-    int side2;
-    int side3;
-    int[] sidedata;
+    private int side1;
+    private int side2;
+    private int side3;
+    private int[] sidedata;
+    
     triangle(int side1, int side2, int side3){
-
         sidedata = order(side1,side2,side3);
         this.side1=sidedata[0];
         this.side2=sidedata[1];
