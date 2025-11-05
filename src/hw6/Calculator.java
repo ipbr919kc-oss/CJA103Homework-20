@@ -28,7 +28,7 @@ public class Calculator {
         }else if(x_value==0 && y_value<0){
             System.out.println();
             throw new CalException("不好意思，當x為0，y是負數無意義");
-        }else if(x_value<0 && checkYValue(y_value)){
+        }else if(x_value<0 && !checkYValue(y_value)){
             System.out.println();
             throw new CalException("不好意思，當x為負數,y為非整數涉及虛數範疇");
         }else{
@@ -58,11 +58,7 @@ public class Calculator {
     }
 
     private boolean checkYValue(double y_value){
-        int i = (int) Math.sqrt(y_value);
-        if((i*i)==y_value){
-            return false;
-        }
-        return true;
+    	return y_value == (int)y_value;
     }
 
     private double getCal(double x_value , double y_value){
