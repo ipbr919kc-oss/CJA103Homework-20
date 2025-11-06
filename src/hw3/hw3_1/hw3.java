@@ -1,4 +1,4 @@
-package hw3;
+package hw3.hw3_1;
 
 import java.util.Arrays;
 import java.util.Scanner;

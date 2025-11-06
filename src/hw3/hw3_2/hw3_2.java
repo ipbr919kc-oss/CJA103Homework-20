@@ -1,4 +1,4 @@
-package hw3_2;
+package hw3.hw3_2;
 
 
 //import java.sql.SQLOutput;
